@@ -153,7 +153,7 @@ Use **Terraform** to manage the cloud infrastructure. The following AWS componen
 **Option.1:** Clone the repo in your local machine.
 In the root directory give the command 
 - docker-compose up
-- 
+ 
 One can access the webpage 
 
 Local:            http://localhost:3000
@@ -167,8 +167,11 @@ To pull docker images
 -docker pull manikbali/perplexity_clone_frontend:latest
 
 To run docker images
--docker run -d -p 8000:8000 --name perplexity_backend manikbali/perplexity_clone_backend:latest
--docker run -d -p 3000:3000 --name perplexity_frontend manikbali/perplexity_clone_frontend:latest
 
-in your browser type Local:          
--http://localhost:3000 
+- docker run -d -p 8000:8000 --name perplexity_backend manikbali/perplexity_clone_backend:latest
+
+- docker run -d -p 3000:3000 --name perplexity_frontend manikbali/perplexity_clone_frontend:latest
+
+in your browser type          
+
+- http://localhost:3000 
