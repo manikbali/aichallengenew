@@ -5,7 +5,7 @@ services:
     image: manikbali/perplexity_clone_backend:latest
     container_name: perplexity_backend
     ports:
-      - "8000:8000"
+      - "5000:5000"
     networks:
       - perplexity_network
 
