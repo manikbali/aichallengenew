@@ -41,9 +41,11 @@ The project can be broken into the following components:
 
 - **Frontend**: Built with React.js (or any other framework), handling user interactions and communicating with the backend via APIs.
 - **Backend**: A Node.js service running Express.js or Fastify for handling API requests. It interacts with a search engine, databases, or AI models.
+    - Libraries used
+    - flask, langchain_openai, CORS
 - **Infrastructure**: Managed with **Terraform** to deploy the infrastructure in AWS (or another cloud provider).
 - **Containerization**: Use **Docker** to containerize both frontend and backend applications for easier deployment and scaling.
-- **Deployment Pipeline**: Managed via CI/CD pipelines (GitHub Actions, Jenkins, etc.), allowing automated building and deployment.
+- **Deployment Pipeline**: Managed via CI/CD pipelines (terraform), allowing automated building and deployment.
 
 ### 2. **Development Workflow**
 
@@ -148,6 +150,12 @@ The project can be broken into the following components:
 Use **Terraform** to manage the cloud infrastructure. The following AWS components will be created:
   The terraform directory has a main.tf file. This file has task descriptions that can allow users to deploy the infrastructure on the AWS cloud.
   Commands to deploy on the AWS cloud 
+  **CI/CD: **
+  - Updates  the code
+  - Build a docker image
+  - Push image to aws
+  - Use terraform script to deploy.
+    
   1. terraform init
   2. terraform apply.
   
