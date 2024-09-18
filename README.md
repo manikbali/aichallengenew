@@ -61,28 +61,26 @@ The project can be broken into the following components:
 3. **Connect to Backend API**:
    - In the frontend, used environment variables to configure the backend URL. Made sure to handle responses from the backend to display search results.
 
-4. **Dockerize the Frontend**:
-   Create a `Dockerfile` for the frontend:
-  ** Use Node 16 base image
-    FROM node:16
+4. **Dockerize the Frontend**
+   Create a `Dockerfile` for the frontend
+   ** Use Node 16 base image
+   FROM node:16
 
-** Set working directory
-    WORKDIR /app
+   Set working directory
+   WORKDIR /app
 
-**Copy package.json and install dependencies
-   COPY package.json .
-   RUN npm install
+  Copy package.json and install dependencies
+  COPY package.json .
+  RUN npm install
 
-**Copy the rest of the files
-   COPY . .
+  Copy the rest of the files
+  COPY . .
 
-**Expose the port
-   EXPOSE 3000
+  Expose the port
+  EXPOSE 3000
 
-**Start the React application
-   CMD ["npm", "start"]
-
-
+  Start the React application
+  CMD ["npm", "start"]
 
 #### **Backend Development**  
 
@@ -93,31 +91,28 @@ The project can be broken into the following components:
 2. **Build API Endpoints**:
    - Created a basic API that accepts search queries, calls external APIs on ChatGpt-40 AI model, and returns search results. Used flask, langchain open ai for Chatgpt and CORS for connecting to frontend.
 
- 
-   ```
+3. **Dockerize the Backend**
+  - Create a `Dockerfile` for the backend:
+    Use Python 3.9 base image
+    FROM python:3.9
 
-3. **Dockerize the Backend**:
-   Create a `Dockerfile` for the backend:
-  # Use Python 3.9 base image
-FROM python:3.9
+    Set working directory
+    WORKDIR /app
 
-# Set working directory
-WORKDIR /app
+    Copy the requirements file and install dependencies
+    COPY requirements.txt .
+    RUN pip install --no-cache-dir -r requirements.txt
+    RUN pip install gunicorn
 
-# Copy the requirements file and install dependencies
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install gunicorn
+    Copy the rest of the app code
+    COPY . .
 
-# Copy the rest of the app code
-COPY . .
+    Expose the port
+    EXPOSE 5000
 
-# Expose the port
-EXPOSE 5000
-
-# Run the application
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
-   ```
+    Run the application
+    CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
+  
 
 #### **Containerization with Docker**
 
