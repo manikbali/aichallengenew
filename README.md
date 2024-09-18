@@ -162,7 +162,7 @@ Use **Terraform** to manage the cloud infrastructure. The following AWS componen
 
 ### 4. **Running Instance**
 
-**Option.1:** Clone the repo in your local machine.
+**Option.1:** Build docker images locally. Clone the repo in your local machine.
 In the root directory give the command 
 - docker-compose up
  
@@ -171,7 +171,7 @@ One can access the webpage
 Local:            http://localhost:3000
 frontend_1  |   On Your Network:  http://172.21.0.2:3000
 
-**Option.2:** 
+**Option.2:** Pull prebuilt docker images from Docker hub
 The backend and frontend docker images have been put on a public url and can be pulled from there and run
 
 1. Pull docker images
