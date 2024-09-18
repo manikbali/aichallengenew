@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  backend:
+    image: manikbali/perplexity_clone_backend:latest
+    container_name: perplexity_backend
+    ports:
+      - "8000:8000"
+    networks:
+      - perplexity_network
+
+  frontend:
+    image: manikbali/perplexity_clone_frontend:latest
+    container_name: perplexity_frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - perplexity_network
+
+networks:
+  perplexity_network:
+    driver: bridge
