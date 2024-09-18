@@ -151,7 +151,7 @@ Use **Terraform** to manage the cloud infrastructure. The following AWS componen
 ### 4. **Running Instance**
 
 Clone the repo in your local machine.
-give the. In the root directory give the command 
+In the root directory give the command 
 - docker-compose up
 - 
 One can access the webpage 
