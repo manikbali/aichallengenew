@@ -82,7 +82,7 @@ The project can be broken into the following components:
 **Start the React application
    CMD ["npm", "start"]
 
-   ```
+
 
 #### **Backend Development**  
 
