@@ -175,8 +175,9 @@ frontend_1  |   On Your Network:  http://172.21.0.2:3000
 The backend and frontend docker images have been put on a public url and can be pulled from there and run
 
 To pull docker images
--docker pull manikbali/perplexity_clone_backend:latest
--docker pull manikbali/perplexity_clone_frontend:latest
+
+- docker pull manikbali/perplexity_clone_backend:latest
+- docker pull manikbali/perplexity_clone_frontend:latest
 
 To run docker images
 
