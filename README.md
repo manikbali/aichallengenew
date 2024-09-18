@@ -31,7 +31,7 @@ Helpers:
 # Implemetation
 To develop and deploy a simple, production-ready replica of [Perplexity.ai](https://www.perplexity.ai/) with components including **Node.js modules**, **backend**, **frontend**, **Terraform**, and **Docker**, follow this step-by-step guide:
 
-![My Project Logo](images/fb.png "Architecture")
+![My Project Logo]([images/(https://github.com/manikbali/aichallengenew/blob/main/fb.png "Architecture")
 
 
 ### 1. **Project Structure and Requirements**
