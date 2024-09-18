@@ -174,16 +174,14 @@ frontend_1  |   On Your Network:  http://172.21.0.2:3000
 **Option.2:** 
 The backend and frontend docker images have been put on a public url and can be pulled from there and run
 
-To pull docker images
+1. Pull docker images
 
 - docker pull manikbali/perplexity_clone_backend:latest
 - docker pull manikbali/perplexity_clone_frontend:latest
 
-To run docker images
-
-- docker run -d -p 8000:8000 --name perplexity_backend manikbali/perplexity_clone_backend:latest
-
-- docker run -d -p 3000:3000 --name perplexity_frontend manikbali/perplexity_clone_frontend:latest
+2. Download the docker-compose.yml from https://github.com/manikbali/aichallengenew/blob/main/rundockeryml/docker-compose.yml
+   Then give
+   - docker-compose up
 
 in your browser type          
 
