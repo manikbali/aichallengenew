@@ -1,0 +1,8 @@
+# Ignore Terraform's .terraform directory
+terraform/.terraform/
+node_modules
+
+# Ignore sensitive keys (adjust paths or filenames as necessary)
+*.key
+*.pem
+perplexity-backend/ # Example if keys are in a specific directory

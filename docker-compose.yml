@@ -1,0 +1,10 @@
+version: '3'
+services:
+  backend:
+    build: ./perplexity-backend
+    ports:
+      - "5000:5000"
+  frontend:
+    build: ./perplexity-frontend
+    ports:
+      - "3000:3000"
