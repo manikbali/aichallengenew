@@ -63,28 +63,28 @@ The project can be broken into the following components:
 
 4. **Dockerize the Frontend**:
    Create a `Dockerfile` for the frontend:
-  # Use Node 16 base image
+  ** Use Node 16 base image
     FROM node:16
 
-# Set working directory
+** Set working directory
     WORKDIR /app
 
-# Copy package.json and install dependencies
+**Copy package.json and install dependencies
    COPY package.json .
    RUN npm install
 
-# Copy the rest of the files
+**Copy the rest of the files
    COPY . .
 
-# Expose the port
+**Expose the port
    EXPOSE 3000
 
-# Start the React application
+**Start the React application
    CMD ["npm", "start"]
 
    ```
 
-#### **Backend Development**
+#### **Backend Development**  
 
 1. **Setup Node.js Backend**:
    - Initialized the Node.js backend with fastapi for handling API requests.
