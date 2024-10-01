@@ -1,6 +1,6 @@
-# Implement a Perplexity Website ( perplexity.ai)  on AWS/ A full stack development
-This repository is meant to mimic the perplexity.ai website.
+# Implement a website similar to perplexity.ai on AWS/ A full stack development
 
+This repository is meant to mimic the perplexity.ai website.
 
   Subject of this challenge is to develop and deploy a simple, but production ready replica of [Perplexity.ai](https://www.perplexity.ai/).
 
