@@ -1,4 +1,5 @@
-# Implement a website similar to perplexity.ai on AWS/ A full stack development
+# Implement a website similar to perplexity.ai on AWS
+# A AWS full stack development
 
 This repository is meant to mimic the perplexity.ai website.
 
